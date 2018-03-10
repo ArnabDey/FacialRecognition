@@ -37,7 +37,7 @@ def comparingPictures(img1, img2):
     pixelVal2 = np.sum(grayScale2)
 
     change = pixelVal2 - pixelVal1
-    if (change > (pixelVal1 * 0.1)):
+    if (change > (pixelVal1 * 0.3)):
         return True
     return False
 
@@ -66,6 +66,7 @@ while (repeat == ""):
         val = response["outputs"][0]["data"]
         if (val == {}):
             print("There is not a person here")
+            f = open('output.txt', 'w').close()
         else:
             print("Showing Image of Person")
             person  = cv2.imread("practice.png")
