@@ -65,7 +65,7 @@ while (repeat == ""):
 
         val = response["outputs"][0]["data"]
         if (val == {}):
-            print("There is not a person waiting in front of the camera")
+            print("The image is not of a person")
             f = open('output.txt', 'w').close()
         else:
             print("Showing Image of Person")
