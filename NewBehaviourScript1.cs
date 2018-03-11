@@ -17,7 +17,7 @@ public class NewBehaviourScript1 : MonoBehaviour
         reader.Close();
         if (input.Length > 0)
         {
-            GetComponent<TextMesh>().text = "Someone is behind you";
+            GetComponent<TextMesh>().text = "Someone is at your main door. Please open the door.";
             Debug.Log("debugging");
         } else
         {

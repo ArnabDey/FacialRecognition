@@ -65,13 +65,13 @@ while (repeat == ""):
 
         val = response["outputs"][0]["data"]
         if (val == {}):
-            print("There is not a person here")
+            print("There is not a person waiting in front of the camera")
             f = open('output.txt', 'w').close()
         else:
             print("Showing Image of Person")
             person  = cv2.imread("practice.png")
             f = open('output.txt', 'w')
-            f.write("A person is appearing")
+            f.write("A person is waiting in front of the camera")
             f.close()
     #        cv2.imshow("image", person)
     #        cv2.waitKey(0)
